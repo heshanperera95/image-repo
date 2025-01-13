@@ -12,7 +12,7 @@ def lambda_handler(event, context):
         
         # Create a response message
         if age:
-            message = f"Hello, {name}! THIS IS VERSION 04.You are {age} years old."
+            message = f"Hello, {name}! THIS IS VERSION 10.You are {age} years old."
         else:
             message = f"Hello, {name}!"
         
