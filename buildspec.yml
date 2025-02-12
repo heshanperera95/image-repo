@@ -29,7 +29,6 @@ phases:
       - aws cloudformation deploy \
           --template-file lambda-deployment.yml \
           --stack-name lambda-stack \
-          --parameter-overrides ImageUri=$AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/lambda-docker-test:latest \
-          --capabilities CAPABILITY_NAMED_IAM
+          --parameter-overrides ImageUri=$AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/lambda-docker-test:latest
 artifacts:
     files: imagedefinitions.json
