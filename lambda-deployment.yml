@@ -28,12 +28,9 @@ Resources:
       FunctionName: "MyLambdaFunction"
       Role: !GetAtt LambdaExecutionRole.Arn
       Code:
-        ImageUri: !Sub "${ECRRepositoryUri}:latest"
+        ImageUri: 820242903582.dkr.ecr.us-east-1.amazonaws.com/lambda-docker-test:latest
       PackageType: "Image"
       Timeout: 30
       MemorySize: 128
 
-  ECRRepository:
-    Type: "AWS::ECR::Repository"
-    Properties:
-      RepositoryName: "lambda-docker-test"
+
