@@ -25,6 +25,9 @@ phases:
       - echo Writing image definitions file...
       - printf '[{"name":"nodeapp","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
       - cat imagedefinitions.json
-
+      - aws cloudformation deploy \
+          --template-file lambda-deployment.yml \
+          --stack-name lambda-stack \
+          --capabilities CAPABILITY_NAMED_IAM
 artifacts:
     files: imagedefinitions.json
