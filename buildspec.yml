@@ -25,7 +25,6 @@ phases:
       - echo Writing image definitions file...
       - printf '[{"name":"nodeapp","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
       - cat imagedefinitions.json
-      - echo "Updating the CloudFormation stack..."
-      - aws cloudformation deploy --template-file lambda-deployment.yml --stack-name lambda-stack --parameter-overrides ImageUri=820242903582.dkr.ecr.us-east-1.amazonaws.com/lambda-docker-test:latest --capabilities CAPABILITY_NAMED_IAM
+
 artifacts:
     files: imagedefinitions.json
