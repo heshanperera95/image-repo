@@ -1,5 +1,8 @@
 version: 0.2
-$ecr_image_version = "v4"
+
+env:
+  variables:
+    ecr_image_version: v5
 
 phases:
   pre_build:
