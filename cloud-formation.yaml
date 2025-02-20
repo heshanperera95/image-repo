@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: '2010-09-09'
-Description: CloudFormation template to deploy a Lambda function using an image from ECR.Version 2
+Description: CloudFormation template to deploy a Lambda function using an image from ECR.
 
 Resources:
   MyLambdaFunction:
