@@ -8,7 +8,7 @@ Resources:
       FunctionName: MyEcrLambdaFunction
       Role: !GetAtt LambdaExecutionRole.Arn
       Code:
-        ImageUri: 820242903582.dkr.ecr.us-east-1.amazonaws.com/lambda-docker-test:v7 # Replace this with your ECR Image URI, e.g., 123456789012.dkr.ecr.us-east-1.amazonaws.com/my-repo:latest
+        ImageUri: 820242903582.dkr.ecr.us-east-1.amazonaws.com/lambda-docker-test:latest # Replace this with your ECR Image URI, e.g., 123456789012.dkr.ecr.us-east-1.amazonaws.com/my-repo:latest
       PackageType: Image
       Timeout: 30
       MemorySize: 128

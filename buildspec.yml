@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   variables:
-    ecr_image_version: v7
+    ecr_image_version: latest
 
 phases:
   pre_build:
